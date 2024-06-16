@@ -7,12 +7,14 @@
 Шаг 1: Клонирование репозитория
 
 git clone https://github.com/bqcktobqck/practice.git
+
 cd practice
 
 Шаг 2: Установка зависимостей
 Создайте виртуальное окружение и активируйте его:
 
 python -m venv venv
+
 source venv/bin/activate
 
 Шаг 3: Установите зависимости
@@ -22,7 +24,9 @@ pip install -r requirements.txt
 Шаг 4: Cоздание и миграция базы данных
 
 flask db init
+
 flask db migrate
+
 flask db upgrade
 
 Шаг 5: Нужно произвести настройку переменных окружений в .env файле
